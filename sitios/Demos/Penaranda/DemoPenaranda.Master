@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" 
+AutoEventWireup="false" 
+CodeBehind="DemoPenaranda.master.vb" 
+Inherits="procomlcd.DemoPenaranda" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+       <link href="App_Themes/Standard/css-content-penaranda.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+       <link href="App_Themes/Standard/css-print.css" rel="stylesheet" type="text/css" media="print" />
+       <title>Demo Penaranda Capacitacion</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+   <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
+        
+        <div id="menu-navegacion">
+        <h1>Demo | Capacitación Peñaranda&nbsp;&nbsp;&nbsp; </h1>
+           <%--<img alt="" src="Img/logo_bancomer.gif" />--%><br />
+           <br />
+           
+           <ul>
+                <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Principal</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/sitios/Demos/Penaranda/DemoPenarandaMenu.aspx">Menu Peñaranda</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="rh/DemoPenarandaRH.aspx">RH</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="capacitacion/DemoPenarandaCapacitacion.aspx">Capacitación</asp:HyperLink></li>
+               <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="certificacion/DemoPenaraldaCertificacion.aspx">Certificación</asp:HyperLink></li>
+                
+               
+            </ul>
+        <div>
+        <br /> <br />  <br /> <br /> <br />   
+        
+        <asp:LinkButton ID="lnkCerrarSesion" ValidationGroup="LogOFF" runat ="server" OnClick ="lnkLogOff_Click">
+         Cerrar Sesion
+        </asp:LinkButton> 
+              
+     </div>
+  </div>
+   
+   
+    <div>
+    <a id="maincontent"></a>
+        <asp:ContentPlaceHolder ID="DemoPenarandaContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>

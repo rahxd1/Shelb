@@ -1,0 +1,66 @@
+<%@ Master Language="VB"
+    CodeBehind="MarsConveniencia.Master.vb" 
+    Inherits="procomlcd.MarsConveniencia"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="Keywords" content="lcd, control,datos" />
+    <meta name="Description" content="Logistica en Control de Datos" />
+    <link href="../App_Themes/Standard/css-content.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+    <link href="../App_Themes/Standard/css-print.css" rel="stylesheet" type="text/css" media="print" />
+    <link rel="shortcut icon" href="../../../Img/webicon.ico" />
+    <title>Control De Logistica de Datos</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <!--
+
+TOP INFORMTION
+
+-->
+        <!--
+
+TOP NAV
+
+-->
+        <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
+        
+        <div id="menu-navegacion">
+                   <img alt="" src="../Img/logo_mars.gif" /><br />
+                   <br />
+                   
+                   <ul>
+                        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Principal</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/sitios/Mars/Conveniencia/MenuMarsConveniencia.aspx">Mars Conveniencia</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sitios/Mars/Conveniencia/Captura/RutaMarsConv.aspx">Capturas</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/sitios/Mars/Conveniencia/Reportes/ReportesMarsConv.aspx">Reportes</asp:HyperLink></li>
+                    </ul>
+            <div>
+                &nbsp;<br />
+                <br />
+                <br />
+&nbsp;<asp:LinkButton ID="lnkCerrarSesion" ValidationGroup="LogOFF" runat ="server" OnClick ="lnkLogOff_Click">
+                 Cerrar Sesion
+                </asp:LinkButton> 
+              
+                </div>
+        </div>
+        <a id="maincontent"></a>
+        <asp:ContentPlaceHolder ID="ContenidoMarsConveniencia" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+        <!--
+
+footer
+
+-->
+
+    </form>
+</body>
+</html>

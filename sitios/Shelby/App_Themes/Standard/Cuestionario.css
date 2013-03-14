@@ -1,0 +1,175 @@
+﻿.Examenn
+{
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+    
+    }
+
+
+.ptitulo
+{
+      background-color:#00899F;
+      width:400px;
+      height :30px;
+     
+    }
+    
+.p1titulo
+{
+    color :#ffffff;
+    font-size:15px;
+    position :relative;
+    top:5px; 
+    left:30px;
+    width: 359px;
+}
+
+
+.pregunta
+{
+     background-color:#ffffff;
+     
+    }
+    
+    
+.nombre
+{
+     background-color:#696969;
+     height :30px;
+    } 
+    
+    
+.letritas
+{
+    color :#ffffff;
+    font-size:15px;
+    position :relative;
+    top:5px; 
+    left:30px;
+    
+ } 
+    
+    
+.respuestas
+{
+     padding-left:5em;
+     opacity: 0.9;
+    
+    }
+.respuestas input[type="radio"] {
+    display:none; 
+}
+
+.respuestas label {
+    display:inline-block;
+    padding:4px 11px;
+    font-family:Arial;
+    font-size:16px;
+}
+
+INPUT[checked][type='radio']
+{   
+    background-color:Silver;
+}
+
+
+.respuestas input[type="radio"]:checked + label { 
+    background-color:#003366;
+     color:#ffffff;
+}
+
+.respuestas label:hover { 
+    background-color:#003366;
+    color:#ffffff;
+}
+
+.respuestas label:checked { 
+    background-color:#003366;
+    color:#ffffff;
+}
+
+
+
+.boton{
+        font-size:14px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:100px;
+        height:30px;
+        top:30%;
+		left:40%;
+		position:relative;
+		-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        -moz-box-shadow: 0px 0px 1px #000000;
+        -webkit-box-shadow: 0px 0px 1px #000000;
+        box-shadow: 0px 0px 1px #000000;
+        /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+       }
+       
+
+.boton:hover{
+        font-size:17px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        background-color:#003366;
+        color:#ffffff;
+        border:0px;
+        width:105px;
+        height:35px;
+        bottom:30%;
+		left:40%;
+		position:relative;
+       }
+       
+ .next
+ {
+    height:100px;
+     
+     }
+     
+.Examen
+{
+    background-color:#A4A4A4;
+    
+    height :30px;
+    
+    }
+    
+.Examenh3
+{
+    color :#FFFFff;
+    position :relative ;
+    top:20%;
+    
+    
+    }
+    
+.Examen2
+{
+    background-color:#696969;
+    height :30px;
+    
+    }
+    
+.Examenh3
+{
+    color :#FFFFff;
+    position :relative ;
+    top:20%;
+    
+    
+    }
+
+.instru
+{
+
+ font-size :14px;    
+    
+    }

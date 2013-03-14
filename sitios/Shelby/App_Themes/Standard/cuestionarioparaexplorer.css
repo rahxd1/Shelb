@@ -1,0 +1,68 @@
+﻿.Examenn
+{
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+    
+    }
+
+
+.ptitulo
+{
+      background-color:#00899F;
+      width:400px;
+      height :30px;
+     
+    }
+    
+.p1titulo
+{
+    color :#ffffff;
+    font-size:15px;
+    position :relative;
+    top:5px; 
+    left:30px;
+    width: 359px;
+}
+
+
+.pregunta
+{
+     background-color:#ffffff;
+     
+    }
+    
+    
+.nombre
+{
+     background-color:#696969;
+     height :30px;
+    } 
+    
+    
+.letritas
+{
+    color :#ffffff;
+    font-size:15px;
+    position :relative;
+    top:5px; 
+    left:30px;
+    
+ } 
+    
+    
+.respuestas
+{
+     padding-left:5em;
+     opacity: 0.9;
+    
+    }
+
+.respuestas input[type="radio"] {
+    display:inline;
+}
+
+.respuestas label:hover { 
+    background-color:#003366;
+    color:#ffffff;
+}

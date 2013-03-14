@@ -1,0 +1,71 @@
+<%@ Master Language="VB"
+    CodeBehind="SYMAC.master.vb" 
+    Inherits="procomlcd.SYMAC" %>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1EnergizerDemo" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="Keywords" content="Shelby" />
+    <meta name="Description" content="Shelby" />
+    <meta name="copyright" content="Copyright (c) 2010. All rights reserved." />
+    <link href="../App_Themes/Standard/css-content.css"  rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+    <link rel="shortcut icon" href="../Img/webicon.ico" />
+    <title>Sanchez y Martin (Anaquel)</title>
+</head>
+<body>
+    <form id="form1SYMAnaquel" runat="server">
+        <!--
+
+TOP INFORMTION
+
+-->
+        <div id="top-information">
+            <div id="top-information-home">
+                <a href="../../../default.aspx">Principal</a></div>
+            <div id="top-information-phone">
+                (33) 3560 0610 </div>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/logolcd.png" Width="10%" />
+        </div>
+        <!--
+
+TOP NAV
+
+-->
+        <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
+        <div id="menu-navegacion">
+           <div>
+                
+                <asp:LinkButton ID="lnkCerrarSesionSYMAC" ValidationGroup="LogOFF" runat ="server" OnClick ="lnkCerrarSesionSYMAC_Click">
+                 Cerrar Sesion
+                </asp:LinkButton> 
+              
+           </div>
+           <ul>
+                <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Principal</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/sitios/SYM/AC/menu_SYMAC.aspx">SYM Anaquel y Cat.</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sitios/SYM/AC/Captura/CapturasSYMAC.aspx">Capturas</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/sitios/SYM/AC/Reportes/ReportesSYMAC.aspx">Reportes</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/sitios/SYM/AC/Documentos/DocumentosSYMAC.aspx">Documentos</asp:HyperLink></li>
+            </ul>
+        </div>
+        <a id="maincontent"></a>
+        <asp:ContentPlaceHolder ID="ContentSYMAC" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--
+
+footer
+
+-->
+        <div id="footer">
+            Derechos Reservados © 2012 Logística de Control de Datos S.A. de C.V. 
+            <div>
+                &nbsp;</div>
+        </div>
+        <div id="footer-sub">
+           
+        </div>
+    </form>
+</body>
+</html>

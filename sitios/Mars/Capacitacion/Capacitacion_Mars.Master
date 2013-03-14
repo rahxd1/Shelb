@@ -1,0 +1,67 @@
+<%@ Master Language="VB"
+ AutoEventWireup="false" 
+ CodeBehind="Capacitacion_Mars.master.vb"
+ Inherits="procomlcd.Capacitacion_Mars" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="Keywords" content="lcd, control,datos" />
+    <meta name="Description" content="Logistica en Control de Datos" />
+    <link href="../App_Themes/Standard/css-content-capacitacion.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+    <link href="../App_Themes/Standard/css-print.css" rel="stylesheet" type="text/css" media="print" />
+    <link rel="shortcut icon" href="../../../Img/webicon.ico" />
+    <title>Control de logistica de datos</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <!--
+
+TOP INFORMTION
+
+-->
+        <!--
+
+TOP NAV
+
+-->
+  <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
+        
+        <div id="menu-navegacion">
+           <img alt="" src="Img/logo_mars.gif" /><br />
+           <br />
+           
+           <ul>
+                <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Principal</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/sitios/Mars/Capacitacion/MenuCapacitacion.aspx">Capacitación</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sitios/Mars/Capacitacion/Sesiones/joinme.aspx">Join.me</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/sitios/Mars/Capacitacion/Manuales/ManualesMars.aspx">Manuales</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/sitios/Mars/Capacitacion/Certificacion/certificacion.aspx">Certificación</asp:HyperLink></li>
+            </ul>
+        <div>
+        <br /> <br />  <br />
+        
+        <asp:LinkButton ID="lnkCerrarSesion" ValidationGroup="LogOFF" runat ="server" OnClick ="lnkLogOff_Click">
+         Cerrar Sesion
+        </asp:LinkButton> 
+              
+     </div>
+  </div>
+        <a id="maincontent"></a>
+        <asp:ContentPlaceHolder ID="ContentMarsCapacitacion" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+        <!--
+
+footer
+
+-->
+
+    </form>
+</body>
+</html>

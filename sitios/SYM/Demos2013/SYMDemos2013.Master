@@ -1,0 +1,68 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SYMDemos2013.Master.vb" Inherits="procomlcd.Demos2013" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1EnergizerDemo" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="Keywords" content="Shelby" />
+    <meta name="Description" content="Shelby" />
+    <meta name="copyright" content="Copyright (c) 2010. All rights reserved." />
+    <link href="App_Themes/Standard/css-content-symdemos2013.css"  rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+    <link rel="shortcut icon" href="../Img/webicon.ico" />
+    <title>Sanchez y Martin Demostradoras 2013)</title>
+</head>
+<body>
+    <form id="form1SYMDemos2013" runat="server">
+        <!--
+
+TOP INFORMTION
+
+-->
+        <div id="top-information">
+            <div id="top-information-home">
+                <a href="../../../default.aspx">Principal</a></div>
+            <div id="top-information-phone">
+                (33) 3560 0610 </div>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/logolcd.png" Width="10%" />
+        </div>
+        <!--
+
+TOP NAV
+
+-->
+        <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
+        <div id="menu-navegacion">
+           <div>
+                
+        <asp:LinkButton ID="lnkCerrarSesion" ValidationGroup="LogOFF" runat ="server" OnClick ="lnkLogOff_Click">
+         Cerrar Sesion
+        </asp:LinkButton> 
+              
+           </div>
+           <ul>
+                <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Principal</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/sitios/SYM/Demos2013/menu_SYMDemos2013.aspx">SYM Demos</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sitios/SYM/Demos2013/Captura/RutasSYMDemos2013.aspx">Capturas</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/sitios/SYM/Demos2013/Reportes/ReportesSYMDemos2013.aspx">Reportes</asp:HyperLink></li>
+            </ul>
+        </div>
+        <a id="maincontent"></a>
+        <asp:ContentPlaceHolder ID="Contenido_SYMDemos2013" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--
+
+footer
+
+-->
+        <div id="footer">
+            Derechos Reservados © 2013 Logística de Control de Datos S.A. de C.V. </a>
+            <div>
+                &nbsp;</div>
+        </div>
+        <div id="footer-sub">
+           
+        </div>
+    </form>
+</body>
+</html>
